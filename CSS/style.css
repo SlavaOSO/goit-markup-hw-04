@@ -16,7 +16,8 @@
   --text-bold: 700;
 }
 
-.feature {
+.feature,
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -156,7 +157,7 @@ img {
   height: 12px;
   margin: 0;
   padding: 0;
-  fill: #757575;
+  fill: currentColor;
 }
 
 .hero {
@@ -207,6 +208,15 @@ img {
   border: 0px;
 }
 
+.feature-icon {
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
 .feature-headline {
   font-weight: var(--text-bold);
   font-size: 14px;
@@ -244,7 +254,8 @@ img {
 }
 
 .example-headline,
-.team-headline {
+.team-headline,
+.clients-headline {
   font-weight: var(--text-bold);
   font-size: 36px;
   line-height: 1.17;
@@ -287,6 +298,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .team {
@@ -306,7 +318,7 @@ img {
 
 .team-inner-list {
   width: 270px;
-  height: 368px;
+  height: 416px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
   0px 1px 1px rgb(0 0 0 / 14%),
@@ -322,8 +334,98 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-list {
+
+.team-icon {
+  margin: 0;
+  padding: 0;
+}
+
+.team-icon .team-svg-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-link {
+    width: 44px;
+    height: 44px;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    color: #afb1b8;
+    background-color: #FFF;
+}
+
+.team-link:hover {
+  color: #FFF;
+  background-color: #2196f3;
+}
+
+.team-link-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.feature-icon {
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.team-icon {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.team-list, .team-icon {
   display: flex;
+}
+
+/* clients */
+
+.clients-headline {
+  margin-bottom: 50px;
+}
+
+.clients-icon {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.clients-icon .clients-svg-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+  /*background-color: #FFF;*/
+}
+
+.clients-link:hover /*.clients-link-icon*/ {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.clients-link-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients-svg-list .clients-link {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 
 /* portfolio */
